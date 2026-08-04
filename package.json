@@ -1,0 +1,50 @@
+{
+  "name": "saishankar-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.7.1",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.7.0",
+    "aos": "^2.3.4",
+    "clsx": "^2.1.1",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.43.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.28.0",
+    "next": "16.3.0",
+    "next-themes": "^0.4.6",
+    "react": "19.2.8",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.8",
+    "react-fast-marquee": "^1.6.5",
+    "react-hook-form": "^7.84.0",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^5.7.0",
+    "react-intersection-observer": "^11.0.0",
+    "react-parallax-tilt": "^1.7.337",
+    "react-scroll": "^1.9.3",
+    "react-simple-typewriter": "^5.0.1",
+    "react-spinners": "^0.17.0",
+    "react-type-animation": "^3.2.0",
+    "tailwind-merge": "^3.6.0",
+    "three": "^0.185.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
