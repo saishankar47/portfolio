@@ -53,7 +53,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider>
-          <div className="flex min-h-screen flex-col bg-black text-white">
+          <div className="flex min-h-screen flex-col">
             <Navbar />
 
             <main className="flex-1">{children}</main>

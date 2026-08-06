@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react";
 import NavLinks from "./NavLinks";
+import ThemeSwitcher from "@/components/common/ThemeSwitcher";
 
 interface Props {
   open: boolean;
@@ -16,6 +17,9 @@ export default function MobileMenu({
 
   return (
     <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md md:hidden">
+      <div className="flex justify-center py-6">
+        <ThemeSwitcher />
+      </div>
       <div className="flex justify-end p-6">
         <button
           onClick={onClose}
