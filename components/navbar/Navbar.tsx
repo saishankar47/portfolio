@@ -1,29 +1,46 @@
+"use client";
+
 import Link from "next/link";
-import { navigation } from "@/constants/navigation";
+import { Menu } from "lucide-react";
+import { useState } from "react";
+
+import NavLinks from "./NavLinks";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-gray-800 bg-black/80 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link
-          href="/"
-          className="text-2xl font-bold tracking-wide text-white"
-        >
-          Saishankar
-        </Link>
+  const [open, setOpen] = useState(false);
 
-        <nav className="hidden gap-8 md:flex">
-          {navigation.map((item) => (
-            <Link
-              key={item.title}
-              href={item.href}
-              className="text-gray-300 transition hover:text-white"
-            >
-              {item.title}
-            </Link>
-          ))}
-        </nav>
-      </div>
-    </header>
+  return (
+    <>
+      <header className="sticky top-0 z-40 border-b border-gray-800 bg-black/80 backdrop-blur">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+
+          <Link
+            href="/"
+            className="text-2xl font-bold tracking-wide"
+          >
+            Saishankar
+          </Link>
+
+          <nav className="hidden items-center gap-8 md:flex">
+            <NavLinks />
+          </nav>
+
+          <button
+            className="md:hidden"
+            onClick={() => setOpen(true)}
+            aria-label="Open menu"
+          >
+            <Menu size={28} />
+          </button>
+
+        </div>
+      </header>
+
+      <MobileMenu
+        open={open}
+        onClose={() => setOpen(false)}
+      />
+    </>
   );
 }
