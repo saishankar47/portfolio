@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function LoadingScreen() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function LoadingScreen() {
       return;
     }
 
-    setLoading(true);
+   
 
     let value = 0;
 

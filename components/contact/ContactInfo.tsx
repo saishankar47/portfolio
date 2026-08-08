@@ -41,7 +41,7 @@ export default function ContactInfo() {
         <p className="mt-4 leading-8 text-muted-foreground">
           Whether you have a software engineering opportunity,
           a freelance project, or simply want to connect, feel
-          free to reach out. I'm always happy to discuss new
+          free to reach out. I&apos;m always happy to discuss new
           ideas and exciting technologies.
         </p>
       </div>

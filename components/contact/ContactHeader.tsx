@@ -26,11 +26,11 @@ export default function ContactHeader() {
       </p>
 
       <h2 className="text-5xl font-bold">
-        Let's Work Together
+        Let&apos;s Work Together
       </h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-muted-foreground">
-        I'm always interested in discussing software engineering,
+        I&apos;m always interested in discussing software engineering,
         cloud technologies, full-stack development,
         and exciting new opportunities.
       </p>
