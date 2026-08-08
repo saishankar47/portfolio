@@ -1,8 +1,8 @@
 export const profile = {
     firstName: "Saishankar",
-    lastName: "Vanam",
+    lastName: "V",
 
-    fullName: "Saishankar Vanam",
+    fullName: "Saishankar V",
 
     title: "Software Engineer",
 
@@ -33,11 +33,11 @@ export const profile = {
     ],
 
     summary:
-        "Software Engineer with 3+ years of experience building scalable enterprise applications using Java, Spring Boot, React, AWS, Microservices, Kafka, PostgreSQL, and modern cloud technologies. Passionate about clean architecture, performance optimization, and delivering high-quality software.",
+        "Software Engineer with 4+ years of experience building scalable enterprise applications using Java, Spring Boot, React, AWS, Microservices, Kafka, PostgreSQL, and modern cloud technologies. Passionate about clean architecture, performance optimization, and delivering high-quality software.",
 
     stats: {
-        experience: "3+",
-        projects: "20+",
+        experience: "4+",
+        projects: "10+",
         technologies: "25+",
         certification: "AWS Certified",
     },

@@ -1,13 +1,13 @@
 export const contact = {
-  email: "your.email@gmail.com",
+  email: "saishankarforjob@gmail.com",
 
-  phone: "+1 (704) 555-1234",
+  phone: "+1 (469) 9120-956",
 
   location: "Charlotte, North Carolina",
 
-  github: "https://github.com/yourusername",
+  github: "https://github.com/saishankar47",
 
-  linkedin: "https://linkedin.com/in/yourusername",
+  linkedin: "https://linkedin.com/in/saishankarv",
 
   resume: "/resume.pdf",
 

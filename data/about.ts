@@ -4,7 +4,7 @@ export const about = {
   title: "Building Scalable Software with Modern Technologies",
 
   description:
-    "I'm a Software Engineer with over 3 years of experience developing enterprise applications using Java, Spring Boot, React, AWS, Kafka, PostgreSQL, and Microservices. I enjoy solving challenging engineering problems, designing scalable systems, and continuously learning modern technologies.",
+    "I'm a Software Engineer with over 4 years of experience developing enterprise applications using Java, Spring Boot, React, AWS, Kafka, PostgreSQL, and Microservices. I enjoy solving challenging engineering problems, designing scalable systems, and continuously learning modern technologies.",
 
   highlights: [
     "Enterprise Software Development",
@@ -18,12 +18,12 @@ export const about = {
   cards: [
     {
       title: "Experience",
-      value: "3+",
+      value: "4+",
       subtitle: "Years",
     },
     {
       title: "Projects",
-      value: "20+",
+      value: "10+",
       subtitle: "Completed",
     },
     {

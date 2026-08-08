@@ -1,10 +1,10 @@
 export const siteConfig = {
   // Basic Information
-  name: "Saishankar Vanam",
+  name: "Saishankar V",
 
   firstName: "Saishankar",
 
-  lastName: "Vanam",
+  lastName: "V",
 
   title: "Software Engineer",
 
@@ -18,18 +18,18 @@ export const siteConfig = {
     "Passionate Software Engineer with experience designing and developing scalable enterprise applications using Java, Spring Boot, React, Next.js, AWS, Docker, Kubernetes, Kafka, and cloud-native technologies.",
 
   // Website
-  url: "https://your-domain.vercel.app",
+  url: "https://saishankar-portfolio.vercel.app/",
 
-  author: "Saishankar Vanam",
+  author: "Saishankar V",
 
   locale: "en_US",
 
   language: "en",
 
   // Contact
-  email: "your.email@gmail.com",
+  email: "saishankarforjob@gmail.com",
 
-  phone: "+1 (704) 555-1234",
+  phone: "+1 (469) 912-0956",
 
   location: "Charlotte, North Carolina, USA",
 
@@ -47,15 +47,9 @@ export const siteConfig = {
   favicon: "/favicon.ico",
 
   // Social Links
-  github: "https://github.com/yourusername",
+  github: "https://github.com/saishankar47",
 
-  linkedin: "https://linkedin.com/in/yourusername",
-
-  leetcode: "https://leetcode.com/yourusername",
-
-  medium: "https://medium.com/@yourusername",
-
-  x: "https://x.com/yourusername",
+  linkedin: "https://linkedin.com/in/saishankarv",
 
   // Skills
   skills: [
