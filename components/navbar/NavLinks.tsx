@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { navigation } from "@/constants/navigation";
 import clsx from "clsx";
 
-interface Props {
+import { navigation } from "@/constants/navigation";
+
+interface NavLinksProps {
   mobile?: boolean;
   onNavigate?: () => void;
 }
@@ -13,31 +15,61 @@ interface Props {
 export default function NavLinks({
   mobile = false,
   onNavigate,
-}: Props) {
+}: NavLinksProps) {
   const pathname = usePathname();
 
   return (
     <>
       {navigation.map((item) => {
-        const active = pathname === item.href;
+        const active =
+          pathname === item.href ||
+          (item.href !== "/" && pathname.startsWith(item.href));
 
         return (
-          <Link
-            key={item.title}
-            href={item.href}
-            onClick={onNavigate}
-            className={clsx(
-              "transition-all duration-300",
-              mobile
-                ? "block rounded-lg px-4 py-3 text-lg"
-                : "text-sm font-medium",
-              active
-                ? "text-blue-500"
-                : "text-gray-300 hover:text-white"
-            )}
+          <motion.div
+            key={item.href}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            className="relative"
           >
-            {item.title}
-          </Link>
+            <Link
+              href={item.href}
+              onClick={onNavigate}
+              aria-current={active ? "page" : undefined}
+              className={clsx(
+                "relative rounded-md transition-colors duration-300 outline-none",
+                "focus-visible:ring-2 focus-visible:ring-blue-500",
+                mobile
+                  ? "block px-5 py-4 text-lg font-medium"
+                  : "px-1 py-2 text-sm font-medium",
+                active
+                  ? "text-blue-500"
+                  : "text-gray-300 hover:text-white dark:text-gray-300 dark:hover:text-white"
+              )}
+            >
+              {item.title}
+
+              {active && (
+                <motion.span
+                  layoutId="navbar-active-indicator"
+                  className="
+                    absolute
+                    -bottom-1
+                    left-0
+                    h-[3px]
+                    w-full
+                    rounded-full
+                    bg-blue-500
+                  "
+                  transition={{
+                    type: "spring",
+                    stiffness: 450,
+                    damping: 35,
+                  }}
+                />
+              )}
+            </Link>
+          </motion.div>
         );
       })}
     </>
