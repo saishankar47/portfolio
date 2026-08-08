@@ -97,16 +97,13 @@ export const metadata: Metadata = {
     ],
   },
 
-  twitter: {
-    card: "summary_large_image",
-
-    title: "Saishankar Vanam",
-
-    description:
-      "Software Engineer | Java | Spring Boot | React | AWS",
-
-    images: ["/twitter-image"],
-  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Saishankar Vanam",
+  description:
+    "Software Engineer | Java | Spring Boot | React | AWS",
+  images: ["/twitter-image"],
+},
 
   icons: {
     icon: "/favicon.ico",
