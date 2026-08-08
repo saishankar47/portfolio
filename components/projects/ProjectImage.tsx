@@ -25,7 +25,7 @@ export default function ProjectImage({
           duration: 0.6,
           ease: "easeOut",
         }}
-        className="h-full w-full"
+        className="relative h-full w-full"
       >
         <Image
           src={image}

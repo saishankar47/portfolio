@@ -127,6 +127,7 @@ export default function HeroImage() {
           fill
           priority
           className="object-cover"
+          sizes="(max-width:768px) 100vw, 310px"
         />
 
         {/* Online */}

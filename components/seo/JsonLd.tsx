@@ -56,9 +56,8 @@ export default function JsonLd() {
     ],
 
     sameAs: [
-      "https://github.com/yourusername",
-      "https://linkedin.com/in/yourusername",
-      "https://leetcode.com/yourusername",
+      "https://github.com/saishankar47",
+      "https://linkedin.com/in/saishankarv",
     ],
   };
 

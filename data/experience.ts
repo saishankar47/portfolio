@@ -12,18 +12,20 @@ export interface ExperienceItem {
 export const experiences: ExperienceItem[] = [
   {
     id: 1,
-    company: "Current Company",
-    position: "Software Engineer",
-    duration: "2024 - Present",
+    company: "Ernst & Young (EY)",
+    position: "Core Engineer",
+    duration: "July 2025 - Present",
     location: "Charlotte, NC",
     type: "Full-Time",
     technologies: [
       "Java",
       "Spring Boot",
       "React",
-      "AWS",
-      "Kafka",
-      "PostgreSQL",
+      "VUE",
+      "Javascript",
+      "SCSS",
+      "HTML",
+      "AEM"
     ],
     responsibilities: [
       "Develop enterprise-scale microservices.",
@@ -35,20 +37,24 @@ export const experiences: ExperienceItem[] = [
   },
   {
     id: 2,
-    company: "University",
-    position: "Graduate Research Assistant",
-    duration: "2022 - 2023",
+    company: "US Bank",
+    position: "Software Engineer",
+    duration: "February 2024 - July 2025",
     location: "USA",
-    type: "Graduate Assistant",
+    type: "Full-Time",
     technologies: [
-      "Python",
-      "Machine Learning",
-      "SQL",
+      "Java",
+      "Spring Boot",
+      "HTML",
+      "SCSS",
+      "JavaScript",
+
     ],
     responsibilities: [
-      "Conducted research projects.",
-      "Analyzed datasets.",
-      "Presented research findings.",
+        "Developed and maintained enterprise banking applications using Java and Spring Boot.",
+        "Implemented RESTful APIs and integrated with front-end applications.",
+        "Collaborated with cross-functional teams to design and implement new features.",
+        "Optimized application performance and resolved technical issues.",
     ],
   },
 ];

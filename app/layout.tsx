@@ -136,7 +136,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <JsonLd />
-          <LoadingScreen />
+          {/* <LoadingScreen /> */}
 
           <ScrollProgress />
 

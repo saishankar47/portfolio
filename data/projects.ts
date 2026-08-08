@@ -60,45 +60,7 @@ export const projects: Project[] = [
     ],
   },
 
-  {
-    id: 2,
-
-    title: "AI Resume Analyzer",
-
-    description:
-      "Built an AI-powered resume analyzer using Next.js, OpenAI, TypeScript, and Tailwind CSS. The application evaluates ATS compatibility, generates resume scores, and provides AI-driven optimization suggestions.",
-
-    image: "/projects/resume-analyzer.png",
-
-    github: "https://github.com/yourusername/resume-analyzer",
-
-    demo: "https://resume-ai.vercel.app",
-
-    featured: true,
-
-    technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "GitHub",
-    ],
-
-    metrics: [
-      {
-        label: "Users",
-        value: "500+",
-      },
-      {
-        label: "AI",
-        value: "GPT-4",
-      },
-      {
-        label: "Hosting",
-        value: "Vercel",
-      },
-    ],
-  },
+  
 
   {
     id: 3,
