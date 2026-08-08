@@ -20,18 +20,27 @@ export default function MouseGlow() {
   });
 
   const [visible, setVisible] = useState(false);
-  const [reducedMotion, setReducedMotion] = useState(false);
+ const [reducedMotion, setReducedMotion] = useState(() => {
+    if (typeof window === "undefined") {
+        return false;
+    }
 
-  useEffect(() => {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+});
+
+useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReducedMotion(media.matches);
 
-    const handleChange = () => setReducedMotion(media.matches);
+    const handleChange = (event: MediaQueryListEvent) => {
+        setReducedMotion(event.matches);
+    };
 
     media.addEventListener("change", handleChange);
 
-    return () => media.removeEventListener("change", handleChange);
-  }, []);
+    return () => {
+        media.removeEventListener("change", handleChange);
+    };
+}, []);
 
   useEffect(() => {
     if (reducedMotion) return;

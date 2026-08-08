@@ -27,7 +27,7 @@ export default function HeroContent() {
         transition={{ delay: 0.2 }}
         className="mt-8 text-lg font-medium text-blue-400"
       >
-        Hello, I'm
+        Hello, I&apos;m
       </motion.p>
 
       {/* Name */}
