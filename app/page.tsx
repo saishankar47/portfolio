@@ -1,19 +1,23 @@
+import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
+import Experience from "@/components/experience/Experience";
+import Footer from "@/components/footer/Footer";
+import Hero from "@/components/hero/Hero";
+import Stats from "@/components/hero/Stats";
+import Projects from "@/components/projects/Projects";
+import Skills from "@/components/skills/Skills";
+
 export default function Home() {
   return (
-    <section className="flex min-h-[80vh] items-center justify-center px-6">
-      <div className="text-center">
-        <p className="mb-4 text-lg text-blue-400">
-          Welcome to my Portfolio
-        </p>
-
-        <h1 className="mb-6 text-6xl font-bold">
-          Saishankar V
-        </h1>
-
-        <h2 className="text-2xl text-gray-400">
-          Software Engineer
-        </h2>
-      </div>
-    </section>
+    <>
+      <Hero />
+      <Stats />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+      {/* <Footer /> */}
+    </>
   );
 }
