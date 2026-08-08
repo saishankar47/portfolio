@@ -11,6 +11,7 @@ import { Toaster } from "react-hot-toast";
 import ScrollProgress from "@/components/common/ScrollProgress";
 import LoadingScreen from "@/components/common/LoadingScreen";
 import AnimatedBackground from "@/components/common/AnimatedBackground";
+import JsonLd from "@/components/seo/JsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -134,6 +135,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <JsonLd />
           <LoadingScreen />
 
           <ScrollProgress />
